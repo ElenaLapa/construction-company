@@ -1,0 +1,487 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Логотип */
+
+header {
+    background: rgb(202, 201, 201);
+    padding: 8px 0;
+}
+
+
+/* полоска верхняя */
+
+.top_wrap {
+    border-top: 2px solid rgb(65, 90, 59);
+    border-bottom: 2px solid rgb(72, 104, 65);
+}
+
+.top_wrap>div {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top_wrap .description {
+    flex-basis: 40%;
+    color: rgb(109, 97, 97);
+    font-size: 23px;
+}
+
+.top_wrap .description span {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.conteiner {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid rgb(53, 36, 36)
+}
+
+.menu nav>ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+}
+
+.menu nav>ul li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0 20px 0 0;
+    position: relative;
+}
+
+.menu nav>ul li a {
+    text-decoration: none;
+    color: saddlebrown;
+    font-size: 1.25vw;
+    margin: 22px;
+}
+
+.menu nav>ul li:hover .submenu {
+    display: block;
+}
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 9);
+    width: 200px;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(127, 189, 108, 0.5);
+    top: 35px;
+}
+
+.menu .submenu li {
+    padding: 5px;
+}
+
+.menu .submenu li a {
+    color: rgb(170, 122, 33);
+    font-weight: bold;
+}
+
+.menu .submenu li a:hover {
+    text-decoration: underline;
+}
+
+.menu form input {
+    border-radius: 4px;
+    border: 1px solid rgb(56, 48, 48);
+    outline: 0;
+    padding: 5px;
+}
+
+.menu form button {
+    border: none;
+    background: none;
+    color: rgb(0, 0, 0);
+    outline: 0;
+    cursor: pointer;
+    font-size: 1.30vw;
+    font-weight: bold;
+}
+
+.menu img {
+    position: absolute;
+    right: 22px;
+    bottom: 7px;
+}
+
+
+/* Соц иконки */
+
+.soc_icons p {
+    font-size: 14px;
+    color: rgb(5, 5, 5);
+    margin: 15px;
+}
+
+.red {
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    font-weight: bold;
+}
+
+.scc_icons a {
+    color: rgba(4, 59, 111, 0.5);
+    margin: 0.13px;
+    margin: 10px;
+}
+
+
+/* банер со слайдером */
+
+.banner .slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.banner .slider .arrow_left {
+    background: url("../images/pr.png")no-repeat center center;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.banner .slider .arrow_right {
+    background: url("../images/pr.png")no-repeat center center;
+    transform: rotate(180deg);
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.banner .slider .photo {
+    height: 350px;
+    flex-basis: 100%;
+    background: url("../images/rem6.jpg")no-repeat center center;
+}
+
+.banner .slider .photo p {
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+    left: 20px;
+    bottom: 10px;
+    font-size: 20px;
+}
+
+.slider_switch {
+    /* border: 1px solid; */
+    text-align: center;
+    margin: top 10px;
+}
+
+.slider_switch span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.slider_switch .active {
+    background: rgb(179, 177, 171);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+section {
+    flex-basis: 27%;
+}
+
+section h2 {
+    border-left: 5px solid saddlebrown;
+    padding-left: 5px;
+    font-weight: normal;
+    margin: 10px;
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+}
+
+article img {
+    border-radius: 100%;
+    height: 70px;
+}
+
+article p {
+    flex-basis: 70%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+section aside {
+    background: url("../images/recl.jpg") no-repeat center top/cover;
+    height: 200px;
+    position: relative;
+}
+
+section aside p {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #fff;
+    background: rgb(0, 0, 0, 0.7);
+    padding: 10px;
+    margin: 0;
+}
+
+
+/*правый блок.Блок с услугами*/
+
+.content .right {
+    flex-basis: 70%;
+}
+
+.wrap_title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrap_title img {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Контейнер с услугой*/
+
+.wrap_title .title {
+    flex-basis: 30%;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.wrap_title .title:hover .icons {
+    display: block;
+}
+
+.wrap_title .icons {
+    position: absolute;
+    padding: 5px;
+    display: none;
+}
+
+.wrap_title .icons span {
+    display: inline-block;
+    font-size: 18px;
+    color: rgb(56, 48, 48);
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 8px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.wrap_title .icons span:hover {
+    background: rgb(147, 205, 218);
+}
+
+.wrap_title p {
+    font-size: 17px;
+}
+
+.wrap_title p:nth-of-type(1) {
+    color: rgb(5, 5, 5);
+    font-weight: bold;
+}
+
+.wrap_title p:nth-of-type(2) {
+    color: rgb(89, 85, 85);
+}
+
+.wrap_title .title .bottom {
+    border-top: 1px solid rgb(112, 110, 114);
+    border-bottom: 1px solid rgb(25, 24, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.wrap_title .title .bottom span {
+    color: rgb(25, 24, 26);
+}
+
+.wrap_title .title .bottom a {
+    color: rgb(53, 94, 126);
+    text-decoration: none;
+}
+
+.wrap_title .title .bottom a:hover {
+    text-decoration: underline;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination span {
+    display: inline-block;
+    background: rgb(212, 217, 228);
+    color: rgb(2, 2, 2);
+    width: 20px;
+    padding: 3px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pagination span:hover {
+    background: darkgray;
+}
+
+
+/*Галерея*/
+
+.gallery h2 {
+    border-left: 5px solid saddlebrown;
+    padding-left: 3px;
+    font-weight: normal;
+    width: 79%;
+    margin: 45px auto 25px;
+}
+
+.gallery .slider .arrow_left {
+    background: url("../images/pr.png")no-repeat center center;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.gallery .slider .arrow_right {
+    background: url("../images/pr.png")no-repeat center center;
+    transform: rotate(180deg);
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.gallery .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(208, 203, 201);
+    padding: 10px 0 5px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer nav {
+    background: rgb(225, 225, 225);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 60%;
+    height: 100%;
+    padding: 0;
+}
+
+footer nav ul li {
+    list-style-type: none;
+    height: 100%;
+    flex-basis: 100%;
+}
+
+footer nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+footer nav ul li a:hover {
+    background: rgb(201, 194, 190);
+}
+
+footer .titles {
+    background: rgb(221, 221, 221);
+    padding: 10px 0;
+}
+
+footer .titles .links {
+    border: 1px solid rgb(255, 254, 254);
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .titles .links div {
+    background: rgb(209, 209, 209);
+    padding: 10px 0;
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links a::before {
+    content: "\00BB";
+    margin-right: 10px;
+    color: rgb(221, 221, 220);
+}
+
+footer p {
+    text-align: center;
+}
