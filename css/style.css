@@ -40,7 +40,7 @@ header {
 }
 
 .conteiner {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     border: 1px solid;
 }
@@ -69,7 +69,7 @@ header {
 
 .menu nav>ul li a {
     text-decoration: none;
-    color: saddlebrown;
+    color: rgb(24, 66, 94);
     font-size: 1.25vw;
     margin: 22px;
 }
@@ -95,7 +95,7 @@ header {
 }
 
 .menu .submenu li a {
-    color: rgb(170, 122, 33);
+    color: rgb(49, 159, 233);
     font-weight: bold;
 }
 
@@ -132,20 +132,24 @@ header {
 .soc_icons p {
     font-size: 14px;
     color: rgb(5, 5, 5);
-    margin: 15px;
+    margin: 25px;
 }
 
 .red {
     font-size: 19px;
     color: rgb(0, 0, 0);
-    margin: 10px;
+    margin: 15px;
     font-weight: bold;
 }
 
 .scc_icons a {
     color: rgba(4, 59, 111, 0.5);
     margin: 0.13px;
-    margin: 10px;
+    margin: 18px;
+}
+
+.scc_icons {
+    display: flex;
 }
 
 
@@ -197,6 +201,7 @@ header {
     /* border: 1px solid; */
     text-align: center;
     margin: top 10px;
+    padding: 20px;
 }
 
 .slider_switch span {
@@ -223,10 +228,10 @@ section {
 }
 
 section h2 {
-    border-left: 5px solid saddlebrown;
+    border-left: 5px solid rgb(24, 66, 94);
     padding-left: 5px;
     font-weight: normal;
-    margin: 10px;
+    margin: 25px;
 }
 
 article {
@@ -239,6 +244,7 @@ article {
 article img {
     border-radius: 100%;
     height: 70px;
+    margin: 25px;
 }
 
 article p {
@@ -374,7 +380,7 @@ section aside p {
 /*Галерея*/
 
 .gallery h2 {
-    border-left: 5px solid saddlebrown;
+    border-left: 5px solid rgb(24, 66, 94);
     padding-left: 3px;
     font-weight: normal;
     width: 79%;
@@ -465,7 +471,7 @@ footer .titles .links div {
 }
 
 .links a {
-    color: rgb(0, 0, 0);
+    color: rgb(51, 83, 126);
     text-decoration: none;
     display: block;
     font-size: 17px;
@@ -479,7 +485,7 @@ footer .titles .links div {
 .links a::before {
     content: "\00BB";
     margin-right: 10px;
-    color: rgb(221, 221, 220);
+    color: rgb(94, 94, 86);
 }
 
 footer p {
